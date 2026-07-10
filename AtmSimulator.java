@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Atmstimulator {
+public class AtmSimulator {
     public static void welcomeMessage(String bankName){
         System.out.println("***************************");
         System.out.println("          "+bankName);

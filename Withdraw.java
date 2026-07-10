@@ -3,7 +3,9 @@ class Withdraw{
     public static void main(String args[]){
         int balanceAmount = 7000;
         int withdrawAmount = 5000;
-        if(withdraw <0){
+        boolean isAccountActive = true;
+        if(isAccountActive){
+            if(withdrawAmount < 0){
         System.out.println("Invalid withdraw amount");
         }
         else if(withdrawAmount <= balanceAmount){
@@ -13,6 +15,10 @@ class Withdraw{
         }
         else{
             System.out.println("Insufficient balance.");
+        }
+        }
+        else{
+            System.out.println("Account is inactive.");
         }
     }
 }
