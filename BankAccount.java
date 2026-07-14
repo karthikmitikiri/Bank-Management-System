@@ -4,6 +4,13 @@ class BankAccount {
     long balance;
     String ifscCode;
 
+    BankAccount(long accountNumber, String accountHolderName, long balance, String ifscCode) {
+        this.accountNumber = accountNumber;
+        this.accountHolderName = accountHolderName;
+        this.balance = balance;
+        this.ifscCode = ifscCode;
+    }
+
     public void showBalance() {
         System.out.println("Current Balance: " + balance);
     }

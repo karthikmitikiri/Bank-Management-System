@@ -21,11 +21,12 @@ public class AtmSimulator {
         String bankName = "XYZ BANK";
         int choice = 0;
         long depositAmount;
-        BankAccount account = new BankAccount();
-        account.accountHolderName = "Karthik";
-        account.accountNumber = 123456789;
-        account.balance = 5000;
-        account.ifscCode = "SBIN000123";
+        BankAccount account = new BankAccount(
+    123456789,
+    "Karthik",
+    5000,
+    "SBIN000123"
+);
 
         welcomeMessage(bankName);
         while(choice !=4){
